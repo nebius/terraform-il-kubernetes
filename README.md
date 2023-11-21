@@ -1,4 +1,4 @@
-# Kubernetes Terraform Module for Nebius
+# Kubernetes Terraform Module for Nebius IL
 
 ## Features
 
