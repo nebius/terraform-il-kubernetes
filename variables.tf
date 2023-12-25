@@ -15,8 +15,9 @@ variable "master_region" {
     Name of the region where the cluster will be created. This setting is required for regional cluster and not used for zonal cluster.
   EOF
   type        = string
-  default     = "il1-c" # def
+  default     = "eu-north1" # def
 }
+
 
 resource "random_string" "unique_id" {
   length  = 8
