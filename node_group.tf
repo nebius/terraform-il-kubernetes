@@ -32,7 +32,6 @@ resource "nebius_kubernetes_node_group" "kube_node_groups" {
       gpus          = lookup(each.value, "node_gpus", var.node_groups_defaults.node_gpus)
     }
 
-
     dynamic "gpu_settings" {
       for_each = compact([lookup(each.value, "gpu_cluster_id", null)])
       content {
@@ -89,9 +88,9 @@ resource "nebius_kubernetes_node_group" "kube_node_groups" {
         }
       }
     }
-    container_network {
-      pod_mtu = lookup(each.value, "pod_mtu", var.pod_mtu)
-    }
+    //container_network {
+    //  pod_mtu = lookup(each.value, "pod_mtu", var.pod_mtu)
+    //}
 
     network_acceleration_type = lookup(each.value, "network_acceleration_type", var.network_acceleration_type)
 
