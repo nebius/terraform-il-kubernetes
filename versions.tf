@@ -16,7 +16,6 @@ terraform {
 provider "yandex" {
   endpoint = "api.il.nebius.cloud:443"
   storage_endpoint = "storage.cloudil.com:443"
-  folder_id = "b488doomdmdh67vc9it1"
 }
 
 data "nebius_client_config" "client" {}

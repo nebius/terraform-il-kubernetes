@@ -18,7 +18,6 @@ variable "master_region" {
   default     = "il1-c" # def
 }
 
-
 resource "random_string" "unique_id" {
   length  = 8
   upper   = false
