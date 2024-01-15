@@ -121,9 +121,9 @@ module "kube" {
 - Add environment variables for terraform authentication in Nebuis Cloud
 
 ```
-export YC_TOKEN=$(yc iam create-token)
-export YC_CLOUD_ID=$(yc config get cloud-id)
-export YC_FOLDER_ID=$(yc config get folder-id)
+export YC_TOKEN=$(ncp iam create-token)
+export YC_CLOUD_ID=$(ncp config get cloud-id)
+export YC_FOLDER_ID=$(ncp config get folder-id)
 ```
 
 

@@ -18,10 +18,9 @@ terraform {
 }
 
 provider "nebius" {
-  endpoint = "api.nemax.nebius.cloud:443"
-  folder_id = "bjer0eu4okh6vntopouq"
+  endpoint = "api.il.nebius.cloud:443"
+  folder_id = var.folder_id
 }
-
 
 provider "local" {}
 
